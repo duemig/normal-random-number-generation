@@ -1,0 +1,4 @@
+,LCG,PCG64
+Chi-square (100 bins),0.038,0.04
+Kolmogorov-Smirnov,0.039,0.052
+Chi-square on pairs (20 x 20),0.043,0.037

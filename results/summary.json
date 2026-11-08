@@ -1,0 +1,280 @@
+{
+  "sample_size": 5000,
+  "seed": 1,
+  "repetitions": 1000,
+  "python": "3.13.18",
+  "numpy": "2.5.3",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "uniform": {
+    "full_period": true,
+    "single_sample_pvalues": {
+      "Chi-square (100 bins)": 0.9453949267562467,
+      "Kolmogorov-Smirnov": 0.7256177519633108,
+      "Chi-square on pairs (20 x 20)": 0.7415656290423792
+    },
+    "rejection_rate_5pct": {
+      "LCG": {
+        "Chi-square (100 bins)": 0.038,
+        "Kolmogorov-Smirnov": 0.039,
+        "Chi-square on pairs (20 x 20)": 0.043
+      },
+      "PCG64": {
+        "Chi-square (100 bins)": 0.04,
+        "Kolmogorov-Smirnov": 0.052,
+        "Chi-square on pairs (20 x 20)": 0.037
+      }
+    },
+    "lowest_bit_alternates": true,
+    "reps": 1000
+  },
+  "single_sample": {
+    "Inverse transform": {
+      "mean": 0.012017080621009998,
+      "std": 0.9998818067361264,
+      "skewness": -0.012960770170385438,
+      "excess kurtosis": 0.074799154968479,
+      "Kolmogorov-Smirnov": 0.7256177519633108,
+      "Anderson-Darling": 0.7096401586374093,
+      "Shapiro-Wilk": 0.7862583439170548,
+      "D'Agostino K2": 0.5118253582846628,
+      "Jarque-Bera": 0.5205882710147405
+    },
+    "Rejection sampling": {
+      "mean": 0.008349608978495439,
+      "std": 1.0128427655733498,
+      "skewness": 0.008578075216306588,
+      "excess kurtosis": 0.04938129105357714,
+      "Kolmogorov-Smirnov": 0.45303556582125215,
+      "Anderson-Darling": 0.5521254547416563,
+      "Shapiro-Wilk": 0.19010799320633742,
+      "D'Agostino K2": 0.7325578825296506,
+      "Jarque-Bera": 0.7522614096461451
+    },
+    "Box-Muller": {
+      "mean": 0.00954438901452481,
+      "std": 0.9764098915362431,
+      "skewness": 0.054206830962408206,
+      "excess kurtosis": -0.03405125235955753,
+      "Kolmogorov-Smirnov": 0.3435024725763205,
+      "Anderson-Darling": 0.3941055685549715,
+      "Shapiro-Wilk": 0.47053070235700684,
+      "D'Agostino K2": 0.26524211814912835,
+      "Jarque-Bera": 0.2605123016314649
+    },
+    "Polar method": {
+      "mean": 0.010805509351876293,
+      "std": 1.0145146101013909,
+      "skewness": 0.024041029863688085,
+      "excess kurtosis": -0.05161305194140553,
+      "Kolmogorov-Smirnov": 0.4526694205124462,
+      "Anderson-Darling": 0.4745473199114565,
+      "Shapiro-Wilk": 0.47878953841987837,
+      "D'Agostino K2": 0.6085102686751023,
+      "Jarque-Bera": 0.5955251695540194
+    },
+    "NumPy (PCG64, ziggurat)": {
+      "mean": -0.014445415560904746,
+      "std": 1.000738792505655,
+      "skewness": 0.05521102497141396,
+      "excess kurtosis": 0.0888341033894644,
+      "Kolmogorov-Smirnov": 0.28017637134606355,
+      "Anderson-Darling": 0.3457415572164838,
+      "Shapiro-Wilk": 0.378156441997988,
+      "D'Agostino K2": 0.12312497595010677,
+      "Jarque-Bera": 0.12342294642887396
+    }
+  },
+  "rejection_rates": {
+    "Inverse transform": {
+      "Kolmogorov-Smirnov": 0.039,
+      "Anderson-Darling": 0.046,
+      "Shapiro-Wilk": 0.036,
+      "D'Agostino K2": 0.044,
+      "Jarque-Bera": 0.044
+    },
+    "Rejection sampling": {
+      "Kolmogorov-Smirnov": 0.059,
+      "Anderson-Darling": 0.055,
+      "Shapiro-Wilk": 0.047,
+      "D'Agostino K2": 0.056,
+      "Jarque-Bera": 0.055
+    },
+    "Box-Muller": {
+      "Kolmogorov-Smirnov": 0.055,
+      "Anderson-Darling": 0.051,
+      "Shapiro-Wilk": 0.05,
+      "D'Agostino K2": 0.057,
+      "Jarque-Bera": 0.053
+    },
+    "Polar method": {
+      "Kolmogorov-Smirnov": 0.055,
+      "Anderson-Darling": 0.063,
+      "Shapiro-Wilk": 0.038,
+      "D'Agostino K2": 0.041,
+      "Jarque-Bera": 0.038
+    },
+    "NumPy (PCG64, ziggurat)": {
+      "Kolmogorov-Smirnov": 0.061,
+      "Anderson-Darling": 0.053,
+      "Shapiro-Wilk": 0.049,
+      "D'Agostino K2": 0.062,
+      "Jarque-Bera": 0.062
+    }
+  },
+  "tails": {
+    "Inverse transform": {
+      "draws": 100000000,
+      "count |z|>4": 6330,
+      "expected |z|>4": 6334.248366623972,
+      "z-score |z|>4": -0.05337949296217794,
+      "count |z|>5": 71,
+      "expected |z|>5": 57.330314375838654,
+      "p-value |z|>5": 0.08918958241978392
+    },
+    "Rejection sampling": {
+      "draws": 100000000,
+      "count |z|>4": 6336,
+      "expected |z|>4": 6334.248366623972,
+      "z-score |z|>4": 0.02200876471921863,
+      "count |z|>5": 55,
+      "expected |z|>5": 57.330314375838654,
+      "p-value |z|>5": 0.825203463595969
+    },
+    "Box-Muller": {
+      "draws": 100000000,
+      "count |z|>4": 6372,
+      "expected |z|>4": 6334.248366623972,
+      "z-score |z|>4": 0.47433831080759803,
+      "count |z|>5": 57,
+      "expected |z|>5": 57.330314375838654,
+      "p-value |z|>5": 1.0
+    },
+    "Polar method": {
+      "draws": 100000000,
+      "count |z|>4": 6399,
+      "expected |z|>4": 6334.248366623972,
+      "z-score |z|>4": 0.8135854703738826,
+      "count |z|>5": 72,
+      "expected |z|>5": 57.330314375838654,
+      "p-value |z|>5": 0.06837276253863817
+    },
+    "NumPy (PCG64, ziggurat)": {
+      "draws": 100000000,
+      "count |z|>4": 6299,
+      "expected |z|>4": 6334.248366623972,
+      "z-score |z|>4": -0.4428854909827269,
+      "count |z|>5": 60,
+      "expected |z|>5": 57.330314375838654,
+      "p-value |z|>5": 0.7590779346933172
+    }
+  },
+  "inverse_cdf": {
+    "Centre, |p - 0.5| <= 0.425": {
+      "max abs error": 1.5543122344752192e-15,
+      "max rel error": 1.1877469556860934e-15
+    },
+    "Tail, 1e-11 < p < 0.075": {
+      "max abs error": 5.329070518200751e-15,
+      "max rel error": 9.262526448520406e-16
+    },
+    "Far tail, 1e-300 < p < 1e-11": {
+      "max abs error": 2.842170943040401e-14,
+      "max rel error": 9.077785153660599e-16
+    }
+  },
+  "speed": [
+    {
+      "method": "Uniforms only",
+      "uniform source": "LCG",
+      "million draws per second": 216.3656839192628
+    },
+    {
+      "method": "Inverse transform",
+      "uniform source": "LCG",
+      "million draws per second": 20.751988564707194
+    },
+    {
+      "method": "Rejection sampling",
+      "uniform source": "LCG",
+      "million draws per second": 22.53328114937739
+    },
+    {
+      "method": "Box-Muller",
+      "uniform source": "LCG",
+      "million draws per second": 34.349600617943274
+    },
+    {
+      "method": "Polar method",
+      "uniform source": "LCG",
+      "million draws per second": 42.12806730276426
+    },
+    {
+      "method": "Uniforms only",
+      "uniform source": "PCG64",
+      "million draws per second": 211.11980694882126
+    },
+    {
+      "method": "Inverse transform",
+      "uniform source": "PCG64",
+      "million draws per second": 20.366822357156988
+    },
+    {
+      "method": "Rejection sampling",
+      "uniform source": "PCG64",
+      "million draws per second": 21.14760346261899
+    },
+    {
+      "method": "Box-Muller",
+      "uniform source": "PCG64",
+      "million draws per second": 34.779499710196106
+    },
+    {
+      "method": "Polar method",
+      "uniform source": "PCG64",
+      "million draws per second": 39.72387931418874
+    },
+    {
+      "method": "NumPy (PCG64, ziggurat)",
+      "uniform source": "PCG64",
+      "million draws per second": 85.62123257086982
+    }
+  ],
+  "acceptance": {
+    "rejection_measured": 0.759951,
+    "rejection_theory": 0.7601734505331403,
+    "polar_measured": 0.785217,
+    "polar_theory": 0.7853981633974483,
+    "uniforms_per_draw": {
+      "Inverse transform": 1.0,
+      "Rejection sampling": 3.9464677408767415,
+      "Box-Muller": 1.0,
+      "Polar method": 1.2732395447351628
+    }
+  },
+  "var": {
+    "alpha": 0.99,
+    "positions_eur": {
+      "S&P 500 ETF": 1500000.0,
+      "FTSE 100 ETF": 1000000.0
+    },
+    "spreadsheet_draws": {
+      "n": 500,
+      "var": 78329.39640480373,
+      "es": 85175.03842282761,
+      "var_in_spreadsheet": 78329.39640480373,
+      "es_in_spreadsheet": 80958.61351194343
+    },
+    "reference": {
+      "n": 10000000,
+      "var": 79165.71926212497,
+      "es": 90413.41018817789
+    },
+    "delta_normal": {
+      "var": 79689.27708728373,
+      "es": 91165.29209802047
+    },
+    "n500_rank_of_spreadsheet_var": 0.56,
+    "convergence_reps": 500
+  },
+  "runtime_seconds": 79.2
+}

@@ -1,0 +1,12 @@
+\begin{tabular}{lccc}
+\toprule
+Method & LCG & PCG64 & Uniforms per draw \\
+\midrule
+Uniforms only & 216 & 211 &  \\
+Inverse transform & 21 & 20 & 1.00 \\
+Rejection sampling & 23 & 21 & 3.95 \\
+Box-Muller & 34 & 35 & 1.00 \\
+Polar method & 42 & 40 & 1.27 \\
+NumPy \texttt{standard\_normal} &  & 86 &  \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,25 @@
+{
+  "alpha": 0.99,
+  "positions_eur": {
+    "S&P 500 ETF": 1500000.0,
+    "FTSE 100 ETF": 1000000.0
+  },
+  "spreadsheet_draws": {
+    "n": 500,
+    "var": 78329.39640480373,
+    "es": 85175.03842282761,
+    "var_in_spreadsheet": 78329.39640480373,
+    "es_in_spreadsheet": 80958.61351194343
+  },
+  "reference": {
+    "n": 10000000,
+    "var": 79165.71926212497,
+    "es": 90413.41018817789
+  },
+  "delta_normal": {
+    "var": 79689.27708728373,
+    "es": 91165.29209802047
+  },
+  "n500_rank_of_spreadsheet_var": 0.56,
+  "convergence_reps": 500
+}

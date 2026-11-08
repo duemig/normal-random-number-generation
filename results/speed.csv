@@ -1,0 +1,12 @@
+method,uniform source,million draws per second
+Uniforms only,LCG,216.3656839192628
+Inverse transform,LCG,20.751988564707194
+Rejection sampling,LCG,22.53328114937739
+Box-Muller,LCG,34.349600617943274
+Polar method,LCG,42.12806730276426
+Uniforms only,PCG64,211.11980694882126
+Inverse transform,PCG64,20.366822357156988
+Rejection sampling,PCG64,21.14760346261899
+Box-Muller,PCG64,34.779499710196106
+Polar method,PCG64,39.72387931418874
+"NumPy (PCG64, ziggurat)",PCG64,85.62123257086982
