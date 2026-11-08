@@ -2,7 +2,7 @@
 
 Report: [report.pdf](report.pdf)
 
-Four ways to turn uniform random numbers into normal ones, written from scratch in Python, tested properly, and used in a Monte Carlo value-at-risk calculation.
+Four ways to turn uniform random numbers into normal ones, written from scratch in Python, tested properly, and used in a Monte Carlo value-at-risk calculation. It started as a project I presented at a PhD interview at University College London (UCL).
 
 ## What it covers
 
