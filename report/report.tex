@@ -337,7 +337,7 @@ The ranking depends on the implementation. In a loop that generates one number a
 
 Using the inverse transformation sampling method, we can now perform a Monte Carlo simulation to compute the VaR and the ES for a portfolio of two ETFs. The portfolio holds EUR 1.5 million in an ETF on the S\&P 500 and EUR 1.0 million in an ETF on the FTSE 100. Its value in EUR depends on four risk factors: the returns of the two indices and the changes of the USD/EUR and GBP/EUR exchange rates. We model the daily returns $r$ of the four risk factors as multivariate normal, $r \sim N(\mu, \Sigma)$, with the mean vector $\mu$ and covariance matrix $\Sigma$ estimated from 245 daily returns.
 
-We start by generating independent standard normal draws $z$. Thereafter, we use the Cholesky decomposition of the covariance matrix $\Sigma$ to obtain correlated returns. The Cholesky decomposition of $\Sigma$ is a decomposition of the form
+We start by generating independent standard normal draws $z$. Each scenario needs four of these, one per factor; we draw the underlying uniforms from NumPy's PCG64 generator rather than the LCG, since the output of an LCG lies on a limited number of hyperplanes in higher dimensions (Marsaglia, 1968) and would bias a four-dimensional simulation. Thereafter, we use the Cholesky decomposition of the covariance matrix $\Sigma$ to obtain correlated returns. The Cholesky decomposition of $\Sigma$ is a decomposition of the form
 \[
 \Sigma = L L^{T},
 \]
